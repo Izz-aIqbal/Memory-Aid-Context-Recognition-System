@@ -2,7 +2,7 @@
 
 An intelligent AI-powered system that helps users remember tasks, locate objects, and manage daily routines through object detection, activity recognition, and context-aware reminders.
 
-## 🎯 Features
+##  Features
 
 - **Real-time Object Detection**: Uses YOLOv8 to detect and recognize everyday objects
 - **Activity Recognition**: Infers user activities (sitting, standing, working, reading, etc.)
@@ -13,7 +13,7 @@ An intelligent AI-powered system that helps users remember tasks, locate objects
 - **SQLite Database**: Stores detection logs, activities, reminders, and tasks
 - **Real-time Visualization**: Live video feed with annotations
 
-## 📋 Project Structure
+##  Project Structure
 
 ```
 memory_aid/
@@ -34,7 +34,7 @@ memory_aid/
     └── dashboard.py      # Streamlit web interface
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -96,7 +96,7 @@ streamlit run ui/dashboard.py
 
 Then open your browser to `http://localhost:8501`
 
-## 🎮 Command Line Options
+##  Command Line Options
 
 | Option | Description |
 |--------|-------------|
@@ -106,7 +106,7 @@ Then open your browser to `http://localhost:8501`
 | `--duration <minutes>` | Run for specified duration |
 | `--no-voice` | Disable voice reminders |
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 ### Dashboard Tab
 - Real-time metrics (objects detected, active tasks, reminders)
@@ -138,7 +138,7 @@ Then open your browser to `http://localhost:8501`
 - Set reminder cooldown
 - Database maintenance options
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Tables
 
@@ -157,28 +157,7 @@ Then open your browser to `http://localhost:8501`
 **system_logs**: System events and errors
 - log_level, message, timestamp
 
-## ⚙️ Configuration
-
-Edit `config.py` to customize:
-
-```python
-# Object Detection Settings
-CONFIDENCE_THRESHOLD = 0.5
-YOLO_MODEL = "yolov8n.pt"
-
-# Activity Recognition
-MOTION_THRESHOLD = 10
-FRAME_BUFFER_SIZE = 30
-
-# Reminders
-REMINDER_COOLDOWN = 300  # 5 minutes
-VOICE_ENABLED = True
-
-# Database
-DB_PATH = "memory_aid/database/memory_aid.db"
-```
-
-## 🎯 How It Works
+##  How It Works
 
 ### 1. **Object Detection**
 - Captures video frames from webcam
@@ -203,14 +182,14 @@ DB_PATH = "memory_aid/database/memory_aid.db"
 - Automatic data cleanup after 30 days
 - Full query support for analytics
 
-## 📈 Performance
+##  Performance
 
 - **Object Detection**: ~30-60 FPS on modern hardware (YOLOv8 nano)
 - **Activity Recognition**: Real-time inference
 - **Memory Usage**: ~200-500 MB
 - **Database**: Handles thousands of records efficiently
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Webcam not detected
 ```bash
@@ -231,7 +210,7 @@ python app.py --mock  # Use mock data for testing
 - Delete `memory_aid/database/memory_aid.db` to reset
 - System recreates schema automatically
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Purpose |
 |---------|---------|
@@ -243,17 +222,17 @@ python app.py --mock  # Use mock data for testing
 | `numpy` | Numerical computing |
 | `pillow` | Image processing |
 
-## 📝 Example Reminders
+##  Example Reminders
 
 The system generates intelligent reminders:
 
-- 📍 "You left your keys on the left top"
-- 📍 "Your phone is on the center middle"
-- 🎯 "You've been sitting for too long. Time to move!"
-- 🎯 "You've been reading for a while. Take a break!"
-- 📋 "Reminder: Complete project proposal"
+-  "You left your keys on the left top"
+-  "Your phone is on the center middle"
+-  "You've been sitting for too long. Time to move!"
+-  "You've been reading for a while. Take a break!"
+-  "Reminder: Complete project proposal"
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - [ ] Multi-camera support
 - [ ] Cloud sync for reminders
@@ -264,21 +243,4 @@ The system generates intelligent reminders:
 - [ ] Gesture recognition
 - [ ] Emotion detection
 
-## 📄 License
 
-This project is provided as-is for educational and personal use.
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📞 Support
-
-For issues or questions:
-1. Check the Troubleshooting section
-2. Review the configuration options
-3. Check database integrity with dashboard
-
----
-
-**Made with ❤️ for better memory and productivity**
